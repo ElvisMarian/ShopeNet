@@ -20,10 +20,10 @@ users = [
     ]
 
 @app.route('/api/users', methods = ['POST'])
-def addCountry():
+def addUser():
     content = request.json
-    country = User(content['nume'], content['oras'])
-    UserCollection.insert_one(country.__dict__)
+    user = User(content['nume'], content['oras'])
+    UserCollection.insert_one(user.__dict__)
     return Response()
 
 
@@ -32,4 +32,4 @@ def getById(id):
     for i in users:
         if i.getId() == id:
             return i.__dict__  
-    return Response('{"error" : "Not found any country}"', 404)
+    return Response('{"error" : "Not found any user}"', 404)
