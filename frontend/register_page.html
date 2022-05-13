@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register_page</title>
+    <link rel="stylesheet" href="style_login_page.css" />
+    <style>
+      .text-box input {
+        margin-top: 3%;
+      }
+      .checkbox {
+        text-align: center;
+        margin-top: 3%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fereastra">
+      <img
+        src="./images/shop-theme.svg"
+        alt="tipa care cumpara"
+        class="shop-image"
+      />
+      <div class="login_box" style="padding-bottom: 5%">
+        <form action="./results.html" method="get">
+          <p class="titlu">Register</p>
+          <div class="text-box">
+            <input
+              required
+              name="First Name"
+              type="text"
+              placeholder="First Name"
+            />
+            <input
+              required
+              name="LastName"
+              type="text"
+              placeholder="Last Name"
+            />
+            <input
+              required
+              name="Username"
+              type="text"
+              placeholder="Username"
+            />
+            <input required name="Email" type="email" placeholder="Email" />
+            <input
+              required
+              name="Password"
+              type="password"
+              placeholder="Password"
+            />
+            <input
+              required
+              name="Password Confirmation"
+              type="password"
+              placeholder="Confirm password"
+            />
+          </div>
+          <div class="checkbox">
+            <span>
+              <input required type="checkbox" />
+            </span>
+            <span>
+              <p>You agree with our</p>
+              <a href="./Terms_policy.html" target="_blank">Terms and policy</a>
+            </span>
+          </div>
+
+          <div class="button">
+            <button type="submit" class="login">
+              <span class="login-text">Register</span>
+              <span class="login-icon">
+                <!-- <img
+                  src="./images/right-to-bracket-solid (1).svg"
+                  alt="sageata la dreapta"
+                /> -->
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+      <img src="./images/Logotip.svg" alt="SHOPENET" class="logo" />
+    </div>
+  </body>
+</html>
